@@ -120,5 +120,12 @@ body {
     font-family: 'Roboto', sans-serif;
   }
 
-
+/* Class and ID selector styles */
+#attendance {
+    background-color: lightgray;
+  }
+  
+  .attendee {
+    font-style: italic;
+  }
   
