@@ -56,7 +56,7 @@ body {
   
   /* Color styles */
 h1 {
-    color: color-mix(in lch, plum, pink);; /* Mix colors */
+    color: purple
   }
   
   h2 {
@@ -68,16 +68,16 @@ h1 {
   }
   
   ul li {
-    color: color(from green srgb r g b / 0.9); /* Wider-gamut color */
+    color: red
   }
   
   ol li {
-    color: color(display-p3 1 0.5 0 / .9); /* Specify color in a specific color space */
+    color: pink
   }
   
   /* Background styles */
 body {
-    background-color: #f2f2f2;
+    background-color: #c5e2e8;
   }
   
   section {
