@@ -128,4 +128,8 @@ body {
   .attendee {
     font-style: italic;
   }
-  
+
+/* Universal selector styles */
+* {
+    box-sizing: border-box;
+  }
