@@ -114,4 +114,11 @@ a:hover {
       margin: 10px 0;
     }
   }
+
+/* Font styles */
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+
   
