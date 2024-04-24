@@ -56,7 +56,7 @@ body {
   
   /* Color styles */
 h1 {
-    color: color-mix(normal, red 10%, blue 50%); /* Mix colors */
+    color: color-mix(red 10%, blue 50%); /* Mix colors */
   }
   
   h2 {
@@ -68,11 +68,11 @@ h1 {
   }
   
   ul li {
-    color: color(srgb 30% 60% 60% / 90%); /* Wider-gamut color */
+    color: color(30% 60% 60% / 90%); /* Wider-gamut color */
   }
   
   ol li {
-    color: color(display-p3 1 0 1 / 50%); /* Specify color in a specific color space */
+    color: color(1 0 1 / 50%); /* Specify color in a specific color space */
   }
   
   /* Background styles */
