@@ -102,3 +102,16 @@ a:hover {
     color: #ff4500; /* Change color on hover */
   }
   
+/* Responsiveness styles */
+@media screen and (max-width: 600px) {
+    /* Adjust styles for smaller screens */
+    header {
+      font-size: 18px;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  }
+  
