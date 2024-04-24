@@ -254,4 +254,28 @@ p {
     padding: 20px;
 }
 
+/* Descendant Combinator */
+nav ul li a {
+    color: #333;
+}
 
+/* Child Combinator */
+nav > ul > li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* General sibling combinator */
+h2 ~ p {
+    margin-top: 10px;
+}
+
+/* Adjacent sibling combinator */
+h2 + p {
+    margin-top: 20px;
+}
+
+/* Combining Two Selectors */
+h1.attendanceTitle {
+    color: purple;
+}
