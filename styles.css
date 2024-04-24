@@ -54,3 +54,24 @@ body {
     text-align: center;
   }
   
+  /* Color styles */
+h1 {
+    color: orange;
+  }
+  
+  h2 {
+    color: blue;
+  }
+  
+  h3 {
+    color: green;
+  }
+  
+  ul li {
+    color: red;
+  }
+  
+  ol li {
+    color: purple;
+  }
+  
