@@ -279,3 +279,7 @@ h2 + p {
 h1.attendanceTitle {
     color: purple;
 }
+
+section:has(ul) {
+    background-color: #8bd9f3;
+}
