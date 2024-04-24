@@ -149,4 +149,9 @@ input[type="text"] {
     padding: 10px;
     margin: 5px 0;
   }
+
+/* Pseudo-class selector styles */
+p:hover {
+    background-color: lightblue;
+  }
   
