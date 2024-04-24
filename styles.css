@@ -75,3 +75,12 @@ h1 {
     color: purple;
   }
   
+  /* Background styles */
+body {
+    background-color: #f2f2f2;
+  }
+  
+  section {
+    background-color: #fff;
+  }
+  
