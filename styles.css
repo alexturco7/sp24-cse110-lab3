@@ -154,4 +154,14 @@ input[type="text"] {
 p:hover {
     background-color: lightblue;
   }
-  
+
+/* Selector list styles */
+h2,
+h3 {
+  font-family: Arial, sans-serif;
+}
+
+ul,
+ol {
+  margin-left: 20px;
+}
