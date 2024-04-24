@@ -143,3 +143,10 @@ audio {
     margin-top: 20px;
   }
   
+/* Attribute selector styles */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+  }
+  
