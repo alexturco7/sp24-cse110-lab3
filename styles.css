@@ -56,7 +56,7 @@ body {
   
   /* Color styles */
 h1 {
-    color: orange;
+    color: color-mix(normal, red 10%, blue 50%); /* Mix colors */
   }
   
   h2 {
@@ -68,11 +68,11 @@ h1 {
   }
   
   ul li {
-    color: red;
+    color: color(srgb 30% 60% 60% / 90%); /* Wider-gamut color */
   }
   
   ol li {
-    color: purple;
+    color: color(display-p3 1 0 1 / 50%); /* Specify color in a specific color space */
   }
   
   /* Background styles */
@@ -81,7 +81,7 @@ body {
   }
   
   section {
-    background-color: #fff;
+    background-color: #8bd9f3;
   }
   
   /* Text styles */
@@ -101,6 +101,14 @@ h1, h2, h3 {
 a:hover {
     color: #ff4500; /* Change color on hover */
   }
+
+button:hover {
+    background-color: lightgray; /* Add hover effect */
+}
+
+button:active {
+    transform: translateY(2px); /* Add active effect */
+}
   
 /* Responsiveness styles */
 @media screen and (max-width: 600px) {
@@ -165,3 +173,85 @@ ul,
 ol {
   margin-left: 20px;
 }
+
+/* CSS Variables & Fallbacks */
+:root {
+    --primary-color: #007bff; /* Define a CSS variable with a fallback value */
+}
+
+h1 {
+    color: var(--primary-color, blue); /* Use the CSS variable with a fallback value */
+}
+
+/* Units of measurement for sizing and spacing your elements */
+
+/* Relative Units */
+.container {
+    width: 80%; /* Percentage unit */
+    margin: 2em; /* Relative to the font-size of the element */
+    padding: 0.5em; /* Relative to the font-size of the element */
+}
+
+/* Absolute Units */
+.heading {
+    font-size: 24px; /* Pixels */
+    border: 2px solid black; /* Pixels */
+    line-height: 1.5; /* Unitless - relative to the font size of the element itself */
+}
+
+.text {
+    font-size: 1.2em; /* Relative to the font size of the parent element */
+    margin: 10px; /* Pixels */
+    padding: 20px; /* Pixels */
+}
+
+.show-inline {
+    display: inline; /* Add display property with value inline */
+}
+
+/* Text styles */
+p {
+    color: #000; /* Add color property */
+    text-decoration: underline; /* Add text-decoration property */
+    text-align: center; /* Add text-align property */
+}
+
+/* Sizing styles */
+.example {
+    height: 200px; /* Add height property */
+    width: 300px; /* Add width property */
+    max-width: 500px; /* Add max-width property */
+    min-width: 100px; /* Add min-width property */
+}
+
+/* Display styles */
+.hide {
+    display: none; /* Add display property with value none */
+}
+
+/* Flexbox layout */
+.flex-container {
+    display: flex; /* Apply flex to the display property */
+    justify-content: space-between; /* Flexbox attribute 1 */
+    align-items: center; /* Flexbox attribute 2 */
+}
+
+/* Child elements of the flex container */
+.flex-item {
+    flex: 1; /* Flexbox attribute 3 */
+}
+
+/* Grid layout */
+.grid-container {
+    display: grid; /* Apply grid to the display property */
+    grid-template-columns: repeat(3, 1fr); /* Grid attribute 1 */
+    gap: 10px; /* Grid attribute 2 */
+}
+
+/* Child elements of the grid container */
+.grid-item {
+    background-color: lightblue;
+    padding: 20px;
+}
+
+
